@@ -207,16 +207,16 @@ include('includes/config.php');
   </div>
 </section>
 
-<div class="mt-4 container" style = "display:none;">
+<div class="mt-4 container">
     <div class="row">
           <div class="col-md-6 mx-auto text-center mb-5 section-heading">
-            <h2>Upcoming Events</h2>
+            <h2>Previous Events</h2>
           </div>
         </div>
     <div class="row">
     <div class="col-md-4">
     <hr>
-    <div style="width: 400px;" class="profile-card-6"><img src="images/DeTalks.jpeg?>" class="img img-responsive">
+    <div style="width: 400px;" class="profile-card-6"><img src="./images/previous1.jpg" class="img img-responsive">
         <div class="profile-name">DETalks</div>
         <div class="profile-position"></div>
     </div>
@@ -224,12 +224,12 @@ include('includes/config.php');
 <div class="col-md-4">
 
     <hr>
-    <div style="width: 400px;" class="profile-card-6"><img src="images/Flemin.jpeg?>" class="img img-responsive">
+    <div style="width: 400px;" class="profile-card-6"><img src="./images/previous2.jpg" class="img img-responsive">
         <div class="profile-name">Talk by Flemin Johnson</div>
         <div class="profile-position"></div>
     </div>
 </div>
-<div class="col-md-4">
+<div class="col-md-4" style = "visibility: hidden;">
     <hr>
     <div style="width: 400px;" class="profile-card-6"><img src="images/gopan.jpeg?>" class="img img-responsive">
         <div class="profile-name">Talk by Gopakumar</div>
@@ -241,54 +241,15 @@ include('includes/config.php');
 </div>
 
 <!-- Service end -->
-
+<!-- 
     <div class="mt-4 container">
     <div class="row">
           <div class="col-md-6 mx-auto text-center mb-5 section-heading">
             <h2>Previous Events</h2>
           </div>
         </div>
-    <div class="row">
-    <!-- <?php 
-      $sql = "SELECT * FROM `events`";
-      $query = $dbh -> prepare($sql);
-      $query->execute();
-      $results=$query->fetchAll(PDO::FETCH_OBJ);
-      if($query->rowCount() > 0)
-      {$cnt=0;
-      foreach($results as $result)
-      {	if($cnt!=3){			?> -->
-    <div class="col-md-4">
-    <hr>
-    <!-- <div class="profile-card-6"><img src="images/<?php echo htmlentities($result->image) ?>" class="img img-responsive">
-        <div class="profile-name"><?php echo htmlentities($result->name) ?></div>
-        <div class="profile-position"><?php echo htmlentities($result->date) ?></div>
-    </div> -->
 
-    <div class="profile-card-6"><img src="./images/previous1.jpg" class="img img-responsive">
-      <div class="profile-name">IGNITE</div>
-      <div class="profile-position"></div>
-  </div>
- 
-
-</div>
-<div class="col-md-4">
-  <hr>
-  <!-- <div class="profile-card-6"><img src="images/<?php echo htmlentities($result->image) ?>" class="img img-responsive">
-      <div class="profile-name"><?php echo htmlentities($result->name) ?></div>
-      <div class="profile-position"><?php echo htmlentities($result->date) ?></div>
-  </div> -->
-
-
-<div class="profile-card-6"><img src="./images/previous2.jpg" class="img img-responsive">
-  <div class="profile-name">BEAT THE GAME 2.0</div>
-  <div class="profile-position"></div>
-</div>
-
-</div>
-      <!-- <?php $cnt=$cnt+1;}}}?> -->
-</div>
-</div>
+</div> -->
 
       
       <div class="mt-3 container justify-content-center text-center d-none">
