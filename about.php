@@ -236,7 +236,7 @@ include('includes/config.php');
       
     </div>
 
-    <div class="site-section block-15">
+    <!-- <div class="site-section block-15">
         <div class="container">
           <div class="row">
             <div class="mx-auto text-center mb-5 section-heading">
@@ -279,7 +279,7 @@ include('includes/config.php');
         </div>
       </div>
       
-    </div>
+    </div> -->
   
 
   <!--senior execom starts here-->
