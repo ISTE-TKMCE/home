@@ -217,7 +217,7 @@ include('includes/config.php');
     <div class="col-md-4">
     <hr>
     <div style="width: 400px;" class="profile-card-6"><img src="./images/previous1.jpg" class="img img-responsive">
-        <div class="profile-name">DETalks</div>
+        <div class="profile-name">IGNITE</div>
         <div class="profile-position"></div>
     </div>
 </div>
@@ -225,7 +225,7 @@ include('includes/config.php');
 
     <hr>
     <div style="width: 400px;" class="profile-card-6"><img src="./images/previous2.jpg" class="img img-responsive">
-        <div class="profile-name">Talk by Flemin Johnson</div>
+        <div class="profile-name">BEAT THE GAME 2.0</div>
         <div class="profile-position"></div>
     </div>
 </div>
