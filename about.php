@@ -193,93 +193,9 @@ include('includes/config.php');
     </div>
   
 
-    <div class=" block-15">
-        <div class="container">
-          <div class="row">
-            <div class="mx-auto text-center mb-5 section-heading">
-              <h2>Junior Execom</h2>
-            </div>
-          </div>
 
 
-          <div class="nonloop-block-10 owl-one owl-carousel" id="execomm-carousel">
 
-            <?php 
-      $sql = "SELECT * FROM `execom`";
-      $query = $dbh -> prepare($sql);
-      $query->execute();
-      $results=$query->fetchAll(PDO::FETCH_OBJ);
-      if($query->rowCount() > 0)
-      {
-      foreach($results as $result)
-      {				
-        if($result->category=="Junior Execom"){?>
-        
-            <div class="media-with-text">
-                <center>
-              <div class="img-border-md mb-10">
-                  <img style="display: flex; height:250px; width:250px;"
-                    src="https://www.student.istetkmce.in/admin/images/<?php echo htmlentities($result->image) ?>" alt=""
-                    class="img-fluid img-round img-center" />
-              </div>
-                <h2 class="heading mb-0"><a href="#"><?php echo htmlentities($result->name) ?></a></h2>
-                <span class="mb-3 d-block post-date"><a
-                    href="#"><?php echo htmlentities($result->position) ?></a></span>
-              </center>
-              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p> -->
-            </div>
-            <?php }}}?>
-
-          </div>
-        </div>
-      </div>
-      
-    </div>
-
-    <div class="site-section block-15">
-        <div class="container">
-          <div class="row">
-            <div class="mx-auto text-center mb-5 section-heading">
-              <h2>Web Development</h2>
-            </div>
-          </div>
-
-
-          <div class="nonloop-block-10 owl-three owl-carousel" id="execomm-carousel">
-
-            <?php 
-      $sql = "SELECT * FROM `execom`";
-      $query = $dbh -> prepare($sql);
-      $query->execute();
-      $cnt=0;
-      $results=$query->fetchAll(PDO::FETCH_OBJ);
-      if($query->rowCount() > 0)
-      {
-      foreach($results as $result)
-      {				
-        if($result->category=="Web Developer"  && $cnt<3){?>
-        
-            <div class="media-with-text">
-                <center>
-              <div class="img-border-md mb-10">
-                  <img style="display: flex; height:250px; width:250px;"
-                    src="https://www.student.istetkmce.in/admin/images/<?php echo htmlentities($result->image) ?>" alt=""
-                    class="img-fluid img-round img-center" />
-              </div>
-                <h2 class="heading mb-0"><a href="#"><?php echo htmlentities($result->name) ?></a></h2>
-                <span class="mb-3 d-block post-date"><a
-                    href="#"><?php echo htmlentities($result->position) ?></a></span>
-              </center>
-              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p> -->
-            </div>
-            <?php $cnt=$cnt+1;}}}?>
-
-
-          </div>
-        </div>
-      </div>
-      
-    </div>
   
 
   <!--senior execom starts here-->
