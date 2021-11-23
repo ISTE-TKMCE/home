@@ -54,7 +54,7 @@ include('includes/config.php');
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center" data-aos="fade">
               <!-- <span class="caption mb-3">Official Website Of ISTE TKMCE</span> -->
-              <h1 class="mb-4">ISTE<br> TKM College of Engineering</h1>
+              <h1 class="mb-4"style = "font-family: 'Arvo', serif;">ISTE<br> TKM College of Engineering</h1>
               <!-- <p><a href="#" class="text-white py-3 px-4">Official Website Of ISTE TKMCE</a></p> -->
             </div>
           </div>
@@ -66,7 +66,7 @@ include('includes/config.php');
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center" data-aos="fade">
               <!-- <span class="caption mb-3">Official Website Of ISTE TKMCE</span> -->
-              <h1 class="mb-4">ISTE<br> TKM College of Engineering</h1>
+              <h1 class="mb-4" style = "font-family: 'Arvo', serif;">ISTE<br> TKM College of Engineering</h1>
               <!-- <p><a href="#" class="text-white py-3 px-4">Official Website Of ISTE TKMCE</a></p> -->
             </div>
           </div>
@@ -207,7 +207,7 @@ include('includes/config.php');
   </div>
 </section>
 
-<div class="mt-4 container">
+<div class="mt-4 container" style = "display:none;">
     <div class="row">
           <div class="col-md-6 mx-auto text-center mb-5 section-heading">
             <h2>Upcoming Events</h2>
@@ -249,7 +249,7 @@ include('includes/config.php');
           </div>
         </div>
     <div class="row">
-    <?php 
+    <!-- <?php 
       $sql = "SELECT * FROM `events`";
       $query = $dbh -> prepare($sql);
       $query->execute();
@@ -257,20 +257,41 @@ include('includes/config.php');
       if($query->rowCount() > 0)
       {$cnt=0;
       foreach($results as $result)
-      {	if($cnt!=3){			?>
+      {	if($cnt!=3){			?> -->
     <div class="col-md-4">
     <hr>
-    <div class="profile-card-6"><img src="images/<?php echo htmlentities($result->image) ?>" class="img img-responsive">
+    <!-- <div class="profile-card-6"><img src="images/<?php echo htmlentities($result->image) ?>" class="img img-responsive">
         <div class="profile-name"><?php echo htmlentities($result->name) ?></div>
         <div class="profile-position"><?php echo htmlentities($result->date) ?></div>
-    </div>
+    </div> -->
+
+    <div class="profile-card-6"><img src="./images/previous1.jpg" class="img img-responsive">
+      <div class="profile-name">IGNITE</div>
+      <div class="profile-position"></div>
+  </div>
+ 
+
 </div>
-      <?php $cnt=$cnt+1;}}}?>
+<div class="col-md-4">
+  <hr>
+  <!-- <div class="profile-card-6"><img src="images/<?php echo htmlentities($result->image) ?>" class="img img-responsive">
+      <div class="profile-name"><?php echo htmlentities($result->name) ?></div>
+      <div class="profile-position"><?php echo htmlentities($result->date) ?></div>
+  </div> -->
+
+
+<div class="profile-card-6"><img src="./images/previous2.jpg" class="img img-responsive">
+  <div class="profile-name">BEAT THE GAME 2.0</div>
+  <div class="profile-position"></div>
+</div>
+
+</div>
+      <!-- <?php $cnt=$cnt+1;}}}?> -->
 </div>
 </div>
 
       
-      <div class="mt-3 container justify-content-center text-center">
+      <div class="mt-3 container justify-content-center text-center d-none">
         <a href="event.php" class="btn btn-primary">View More</a>
       </div>
 
@@ -287,7 +308,7 @@ include('includes/config.php');
 		<div class="col-md-4">
     <h4 class="text-center"><strong>FACULTY IN CHARGE</strong></h4>
     <hr>
-    <div class="profile-card-2"><img src="./images/reshmi.jpg" class="img img-responsive">
+    <div class="profile-card-2"><img src="./images/reshmi.jpg" class="img img-fluid img-responsive">
         <div class="profile-name">RESHMI S L </div>
         <div class="profile-username">MECHANICAL DEPT</div>
         <!-- <div class="profile-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div> -->
@@ -296,7 +317,7 @@ include('includes/config.php');
     <div class="col-md-4" >
     <h4 class="text-center"><strong>CHAIRPERSON</strong></h4>
     <hr>
-    <div class="profile-card-2"><img src="./images/fardeen.jpg" class="img img-responsive">
+    <div class="profile-card-2"><img src="./images/fardeen.jpg" class="img img-fluid img-responsive">
         <div class="profile-name">FARDEEN KHAN K</div>
         <div class="profile-username">ELECTRONICS</div>
         <!-- <div class="profile-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div> -->
@@ -305,7 +326,7 @@ include('includes/config.php');
     <div class="col-md-4">
     <h4 class="text-center"><strong>VICE CHAIRPERSON</strong></h4>
     <hr>
-    <div class="profile-card-2"><img src="./images/sreelekshmi.jpg" class="img img-responsive">
+    <div class="profile-card-2"><img src="./images/sreelekshmi.jpg" class="img img-fluid img-responsive">
         <div class="profile-name">SREELEKSHMI NS</div>
         <div class="profile-username">ELECTRONICS</div>
         <!-- <div class="profile-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div> -->
